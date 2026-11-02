@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://www.microsoft.com/en-us/",
+    "http://paypal.com.login.verify-security-alert.example.com/",
+    "https://accounts.google.com/signin/v2/identifier?hl=en-GB",
+    "http://192.168.0.5/secure-login?user=admin",
+    "https://bit.ly/49Rkabc",
+    "https://example-bank-security-alert.xyz/login/verify?acc=123456",
+    "https://xn--pple-43d.com",
+    "http://example.com/%6C%6F%67%69%6E?user=joe#frag",
+    "https://sub.sub.sub.goodsite.org/path",
+    "http://really-long-host-name-with-hyphens-and-1234-digits.badexample.com/path/to/file"
+  ]
+}

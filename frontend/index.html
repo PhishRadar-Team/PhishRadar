@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PhishShield – Phishing URL Detector</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <div class="logo">🛡️</div>
+      <div>
+        <h1>PhishShield</h1>
+        <p class="muted">Real‑time phishing URL detector</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Check a URL</h2>
+      <p class="muted">Paste a link below and click <strong>Analyze</strong>. No data leaves your computer.</p>
+
+      <div class="input-row">
+        <input id="urlInput" type="text" placeholder="https://example.com/login?..." />
+        <button id="analyzeBtn">Analyze</button>
+      </div>
+
+      <div class="examples">
+        <span>Examples:</span>
+        <button class="chip" data-url="https://www.microsoft.com/en-us/">Microsoft</button>
+        <button class="chip" data-url="http://paypal.com.login.verify-security-alert.example.com/">PayPal Lookalike</button>
+        <button class="chip" data-url="http://192.168.0.5/secure-login?user=admin">Raw IP</button>
+        <button class="chip" data-url="https://bit.ly/49Rkabc">Shortener</button>
+      </div>
+    </section>
+
+    <section id="resultCard" class="card hidden">
+      <div class="result-head">
+        <div>
+          <h3 id="label"></h3>
+          <p id="normUrl" class="muted"></p>
+        </div>
+        <div class="score-wrap">
+          <div class="score" id="score">0</div>
+          <div id="scoreBadge" class="badge">Legitimate</div>
+        </div>
+      </div>
+
+      <div class="meter">
+        <div id="meterFill" class="meter-fill"></div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <h4>Top signals</h4>
+          <ul id="signals" class="signals"></ul>
+        </div>
+        <div>
+          <h4>Raw features</h4>
+          <table class="features">
+            <thead><tr><th>Feature</th><th>Value</th></tr></thead>
+            <tbody id="featuresBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span class="muted">© PhishShield</span>
+    <span class="muted">Local analysis • Flask API</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

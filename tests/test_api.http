@@ -1,0 +1,14 @@
+### VS Code REST Client or HTTPYac compatible
+
+POST http://127.0.0.1:5000/api/predict
+Content-Type: application/json
+
+{"url": "http://paypal.com.login.verify-security-alert.example.com/"}
+
+###
+
+POST http://127.0.0.1:5000/api/predict-batch
+Content-Type: application/json
+
+@tests = ./sample_urls.json
+{{tests}}
