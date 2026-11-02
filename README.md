@@ -1,4 +1,4 @@
-# PhishShield – Phishing URL Detector (Flask + Vanilla JS)
+# PhishRadar – Phishing URL Detector (Flask + Vanilla JS)
 A ready-to-run project with a professional frontend and a Python (Flask) backend. No external ML model is required; it uses a transparent, well-tested heuristic scoring engine. You can optionally extend it with ML later.
 
 ## 🧰 Tech Stack
